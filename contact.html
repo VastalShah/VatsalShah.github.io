@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ming's Diner</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" >
+        <a class="navbar-brand" href="#">Ming's Diner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+    </nav>
+
+    <blockquote class="blockquote text-center">
+        <h1 class="display-3">Contact Us</h1>
+    </blockquote>
+    <div class="container h-100">
+        <form style="padding: 1rem;" class="needs-validation">
+            <div class="form-row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <label for="name"> Name</label><br>
+                    <input type="text" id="name" class="form-control" placeholder="Enter Name" required>
+                    <div class="valid-feedback">
+                        Correct.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <label for="email"> Email</label><br>
+                    <input type="email" id="email" class="form-control" placeholder="Enter email" required>
+                    <div class="valid-feedback">
+                        Correct.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <label for="phone"> Phone number</label><br>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter Phone number" required>
+                    <div class="valid-feedback">
+                        Correct.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <label for="validationTextarea">Message</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Please enter a message" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <p></p>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

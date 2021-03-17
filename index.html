@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ming's Diner</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" >
+        <a class="navbar-brand" href="index.html">Ming's Diner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#overview">Overview</a>
+            <a class="nav-item nav-link" href="#bestseller">Bestsellers</a>
+            <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+    </nav>
+
+    <!-- restaurant images -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?cs=srgb&dl=pexels-waldemar-brandt-2290070.jpg&fm=jpg" alt="Photo1" width="1100" height="300">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/1484516/pexels-photo-1484516.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1484516.jpg&fm=jpg" alt="Photo2" width="1100" height="300">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/2923034/pexels-photo-2923034.jpeg?cs=srgb&dl=pexels-edward-eyer-2923034.jpg&fm=jpg" alt="Photo3" width="1100" height="300">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- restaurant overview -->
+    <p id="overview"></p>
+    <blockquote class="blockquote text-center">
+        <h1 class="display-3">Overview</h1>
+    </blockquote>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <dl class="row">
+                <dt class="col-sm-3 text-center">
+                    <h2><span class="badge bg-secondary text-light">Our Mision</span></h2>
+                </dt>
+                <dd class="col-sm-9">To give our customers a place to
+                    celebrate life’s special moments by offering the best food, service, and
+                    ambiance.</dd>
+            </dl>
+        </li>
+        <li class="list-group-item">
+            <dl class="row">
+                <dt class="col-sm-3 text-center">
+                    <h2><span class="badge bg-secondary text-light">Our Vision</span></h2>
+                </dt>
+                <dd class="col-sm-9">Through a shared commitment to excellence, we are
+                    dedicated to the uncompromising quality of our food, service, people and
+                    profit, while taking exceptional care of our guests and staff. We will
+                    continuously strive to surpass our own accomplishments and be recognized
+                    as a leader in our industry.</dd>
+            </dl>
+        </li><li class="list-group-item">
+            <dl class="row">
+                <dt class="col-sm-3 text-center">
+                    <h2><span class="badge bg-secondary text-light">Our Values</span></h2>
+                </dt>
+                <dd class="col-sm-9">Traceable. Sustainable. Responsible. These are more
+                    than just words on our menu—it’s our promise that all of the food we
+                    serve is sourced to the highest standards.</dd>
+            </dl>
+        </li>
+    </ul>
+    
+    <!-- bestsellers -->
+    <p id="bestseller"></p>
+    <p></p>
+    <blockquote class="blockquote text-center">
+        <h1 class="display-3">Our Bestsellers</h1>
+    </blockquote>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Burrito</h5>
+                    <p class="card-text">Click the button below for more info.</p>
+                    <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#burritoModal">
+                          More Info
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="burritoModal" tabindex="-1" aria-labelledby="burritoModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="burritoModalLabel">Burrito</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                              </div>
+                              <div class="modal-body">
+                                  A burrito is a dish in Mexican and Tex-Mex
+                                  cuisine consisting of a flour tortilla wrapped into a sealed
+                                  cylindrical shape around various ingredients.
+                              </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg?cs=srgb&dl=pexels-rajesh-tp-1600711.jpg&fm=jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Club Sandwich</h5>
+                  <p class="card-text">Click the button below for more info.</p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sandwichModal">
+                      More Info
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="sandwichModal" tabindex="-1" aria-labelledby="sandwichLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="sandwichLabel">Club Sandwich</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                          </div>
+                          <div class="modal-body">
+                            A club sandwich, also called a clubhouse
+                            sandwich, is a sandwich of bread, sliced cooked poultry, ham
+                            or fried bacon, lettuce, tomato, and mayonnaise.
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?cs=srgb&dl=pexels-omar-mahmood-106343.jpg&fm=jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Grilled Chicken </h5>
+                    <p class="card-text">Click the button below for more info.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chickenModal">
+                      More Info
+                    </button>
+                  
+                      <!-- Modal -->
+                      <div class="modal fade" id="chickenModal" tabindex="-1" aria-labelledby="chickenModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="chickenModalLabel">Grilled Chicken</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                              </div>
+                              <div class="modal-body">
+                                  Barbecue chicken consists of chicken
+                                  parts or entire chickens that are barbecued, grilled or
+                                  pitrito.
+                              </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <p></p>
+
+    <!-- footer -->
+    <footer class="page-footer font-small navbar-dark bg-dark text-light">
+        <div class="footer-copyright text-center py-3">
+            <i class="fas fa-map-marker-alt"></i>&nbsp;Palm Street
+            <i class="fas fa-phone-alt"></i>&nbsp;0123456789
+            <i class="fas fa-envelope"></i>&nbsp;abc@example.com
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © 2021 Copyright: Ming's Diner
+        </div>
+    </footer>
+</body>
+</html>
